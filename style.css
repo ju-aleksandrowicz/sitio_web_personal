@@ -1,0 +1,130 @@
+html {
+    font-size: calc(15px + 0.390625vw);
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 12vh;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10 px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 6vh;
+    margin-right: 6vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    min-height: 10vh;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 75px;
+    margin-right: 10px;
+}
+
+.perfil{
+    max-height: 500px;
+    border-radius: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    min-height: 70vh;
+}
+
+.cuerpo p{
+    font-size: 2rem;
+}
+
+.cuerpo h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color:#03fa6a;
+    -webkit-text-stroke: 1px black; 
+    }
+
+div div{
+    margin: 20px;
+}
+
+nav a{
+    font-size: 1.25rem;
+    padding-right: 20px;
+}
+
+nav button{
+    background-color: #03fa6a;
+    font-size: 1.25rem;
+    color: black;
+    border-radius: 200px;
+    border: none;
+}
+
+footer img{
+    max-width: 4vh;
+}
+
+nav a:hover{
+    color: #03fa6a;
+}
+
+nav button:hover{
+    border: 1px solid #000000;
+    background-color: white;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width: 1024px){
+    .cuerpo{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
